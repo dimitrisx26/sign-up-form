@@ -9,17 +9,63 @@
   </head>
   <body>
     <div class="left-cont">
-        <div class="img-txt">
-            SIGN-UP
-            <p>Create a new account.</p>
-        </div>
-        <img src="./images/background.jpeg" alt="background">
+      <div class="img-txt">
+        SIGN-UP
+        <p class="img-subtxt">Create a new account.</p>
+      </div>
+      <img src="./images/background.jpeg" alt="background" />
     </div>
 
     <div class="right-cont">
-      <div class="right-top"></div>
-      <div class="right-mid"></div>
-      <div class="right-bottom"></div>
+      <div class="right-top">
+        <p class="top-txt">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </p>
+        <p class="top-txt2">You know you want to.</p>
+      </div>
+      <div class="right-mid">
+        <p class="form-header">Let's do this!</p>
+        <form action="" method="get" class="form-cont">
+          <div class="form-first-col">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" required />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="error"
+              required
+            />
+            <p class="error-txt">*Passwords do not match!</p>
+          </div>
+
+          <div class="form-second-col">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required />
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required />
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              class="error"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="right-bottom">
+        <button class="btn">Create Account</button>
+        <p class="login-txt">
+          Already have an account? <a href="#" class="login-link">Log in</a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
